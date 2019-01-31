@@ -58,7 +58,7 @@ def runner
   first_total = initial_round
   ## last_total = hit?(first_total)
   until first_total > 21
-    first_total = first_total + hit?(first_total)
+    first_total = hit?(first_total)
     display_card_total(first_total)
   end
   end_game(first_total)
